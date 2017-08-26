@@ -17,6 +17,11 @@ Starbucks drink ordering portal based on Restbucks CRUD REST API design.
 
 (iv) order page - can view order id and status of order.
 
+- The Middleware is implemented through KONG API Gateway.The Gateway routes the calls to respective Backend Microservice to handle the request.
+
+- The Backend of Starbucks is writtten in JAVA to handle CRUD operations on resources. It is backed by 3 Node Mongo-DB cluster.
+
+
 
 ### Run the Application
 

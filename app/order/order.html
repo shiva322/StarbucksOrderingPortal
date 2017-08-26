@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <link rel="icon" href="../../favicon.ico"/>
+
+    <title>Starbucks</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header" style = "padding-top:-50px;">
+            <a class="navbar-brand" href="/"><img
+                    src="http://www.pngmart.com/files/3/Starbucks-Logo-PNG-File.png"
+                    width="50px"/></a>
+        </div>
+        <div id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/cart">My Bag</a></li>
+                <li><a href = "/orders">Orders</a></li>
+                <li><a href="myAccount.html">Signin</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+</nav>
+<div ng-app="myApp.order" ng-controller="orderCtrl" data-ng-init="init()" >
+    <!-- Static navbar -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-10 col-md-offset-1">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th class="text-center">Product</th>
+                        <th class="text-center">Quantity</th>
+                        <th class="text-center">Milk</th>
+                        <th class="text-center">Size</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr data-ng-repeat="x in order.items">
+
+                        <td class="col-sm-8 col-md-1 text-center" style="...">
+                            {{x.name}}
+                        </td>
+                        <td class="col-sm-1 col-md-1 text-center" style="...">
+                            {{x.qty}}
+                        </td>
+                        <td class="col-sm-1 col-md-1 text-center">
+                            {{x.milk}}
+                        </td>
+                        <td class="col-sm-1 col-md-1 text-center">
+                           {{x.size}}
+                        </td>
+
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

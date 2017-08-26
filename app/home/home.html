@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <link rel="icon" href="../../favicon.ico"/>
+
+  <title>Starbucks</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="home.css" rel="stylesheet"/>
+
+  <!-- Custom styles for this template -->
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header" style = "padding-top:-50px;">
+      <a class="navbar-brand" href="/"><img
+              src="http://www.pngmart.com/files/3/Starbucks-Logo-PNG-File.png"
+              width="50px"/></a>
+    </div>
+    <div id="navbar">
+      <ul class="nav navbar-nav">
+        <li><a href="">COFFEE</a></li>
+        <li><a href = "">TEA</a></li>
+        <li><a href="">MENU</a></li>
+        <li><a href = "">CARD</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container-fluid -->
+</nav>
+<!-- Static navbar -->
+<div class = "container store" ng-app="myApp.home" ng-controller="homeCtrl">
+
+    <h2 style = "text-align: center; margin-top: -80px; margin-bottom: 80px;">Welcome to Starbucks!<hr/></h2>
+
+
+
+  <div class = "row store-img">
+  <div class = "col-xs-4">
+    <a href = "/store" ng-click="setStore('store1')" ><img src = "http://pinoytutorial.com/techtorial/wp-content/uploads/2010/06/Starbucks.jpg" class = "img-rounded storeimg" width = "300px"/>
+      <h3><p class = "links">STORE 1</pclass></h3>
+    </a>
+  </div>
+  <div class = "col-xs-4">
+    <a href = "/store" ng-click="setStore('store2')"><img src = "http://www.asiamattersforamerica.org/sites/default/files/field/image/Ginza%20Starbucks.jpg" class = "img-rounded storeimg" width = "300px"/>
+      <h3><p>STORE 2</p></h3>
+    </a>
+  </div>
+  <div class = "col-xs-4">
+    <a href = "/store" ng-click="setStore('store3')"><img src = "http://www.starbucksmelody.com/wp-content/uploads/2013/05/image-14-Copenhagen-Starbucks-May-2013.jpg" class = "img-rounded storeimg" width = "300px"/>
+      <h3><p>STORE 3</p></h3>
+    </a>
+  </div>
+  </div>
+</div>
+<div>
+  <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+</div>
+</body>
+</html>

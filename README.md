@@ -9,17 +9,21 @@ Starbucks drink ordering portal based on Restbucks CRUD REST API design.
  
 - Frontend of our app is written in Angular JS. It has: 
 
-(i)  home page  - can select Store 1, Store 2, Store 3.
+  (i)  home page  - can select Store 1, Store 2, Store 3.
 
-(ii) home page of selected Store - can select and add products to cart.
+  (ii) home page of selected Store - can select and add products to cart.
 
-(iii) cart page - add/remove item in cart, update size/quantity. Once products are confirmed, order status changes to PLACED, and overtime it changes to PREPARING, SERVED and COLLECTED.
+  (iii) cart page - add/remove item in cart, update size/quantity. Once products are confirmed, order status changes to PLACED,   and overtime it changes to PREPARING, SERVED and COLLECTED.
 
-(iv) order page - can view order id and status of order.
+  (iv) order page - can view order id and status of order.
 
 - The Middleware is implemented through KONG API Gateway.The Gateway routes the calls to respective Backend Microservice to handle the request.
 
 - The Backend of Starbucks is writtten in JAVA to handle CRUD operations on resources. It is backed by 3 Node Mongo-DB cluster.
+
+### Architecture
+
+![Architecture](https://github.com/shiva322/StarbucksOrderingPortal/blob/master/Architecture.png)
 
 
 
